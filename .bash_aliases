@@ -1,0 +1,9 @@
+alias clea=clear
+alias cleara=clear
+alias cler=clear
+alias lcear=clear
+alias celasr=clear
+alias acler=clear
+alias claewr=clear
+alias celar=clear
+alias eclar=clear

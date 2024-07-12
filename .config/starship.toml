@@ -1,0 +1,9 @@
+[package]
+disabled = true
+
+[python]
+symbol = "🚀"
+format = "[($symbol $virtualenv )]($style)"
+
+[git_status]
+disabled = true
