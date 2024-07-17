@@ -121,3 +121,5 @@ eval "$(starship init bash)"
 if [ -f "$HOME/.env" ] ; then
     . "$HOME/.env"
 fi
+
+. "$HOME/.cargo/env"

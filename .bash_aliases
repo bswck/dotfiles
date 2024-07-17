@@ -1,4 +1,6 @@
 alias clea=clear
+alias clera=clear
+alias ckear=clear
 alias cleara=clear
 alias cler=clear
 alias lcear=clear

@@ -29,3 +29,4 @@ fi
 if [ -f "$HOME/.env" ] ; then
     . "$HOME/.env"
 fi
+. "$HOME/.cargo/env"
