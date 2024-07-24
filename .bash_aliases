@@ -10,3 +10,7 @@ alias claewr=clear
 alias celar=clear
 alias eclar=clear
 alias pn=pnpm
+
+function where() {
+    which -a $1 | uniq
+}
