@@ -9,3 +9,4 @@ alias acler=clear
 alias claewr=clear
 alias celar=clear
 alias eclar=clear
+alias pn=pnpm

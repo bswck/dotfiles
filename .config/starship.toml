@@ -5,5 +5,8 @@ disabled = true
 symbol = "🚀"
 format = "[($symbol $virtualenv )]($style)"
 
+[nodejs]
+disabled = true
+
 [git_status]
 disabled = true
