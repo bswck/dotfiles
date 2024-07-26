@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "PyCharm Night Theme",
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.selectionClipboard": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false,
+    "python.venvPath": "~/.defaultvenv",
+    "python.venvFolders": [
+        "",
+        "~/.defaultvenv"
+    ],
+    "mypy.runUsingActiveInterpreter": true
+}
