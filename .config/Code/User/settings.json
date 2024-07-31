@@ -9,10 +9,30 @@
     "git.autofetch": true,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
-    "python.venvPath": "~/.defaultvenv",
-    "python.venvFolders": [
-        "",
-        "~/.defaultvenv"
-    ],
-    "mypy.runUsingActiveInterpreter": true
+    "python.interpreter.infoVisibility": "always",
+	// Activate Python Environment in the current Terminal on load of the Extension.
+	"python.terminal.activateEnvInCurrentTerminal": false,
+
+	// Activate Python Environment in all Terminals created.
+	"python.terminal.activateEnvironment": false,
+    "python.venvPath": "",
+	"python.defaultInterpreterPath": "/usr/bin/python3",
+
+    "mypy.runUsingActiveInterpreter": true,
+    "svelte.enable-ts-plugin": true,
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "explorer.confirmPasteNative": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "mypy.enabled": false,
+    "ruff.lint.enable": false,
+    "python.analysis.autoFormatStrings": true,
+    "files.exclude": {
+        "**/.venv/": true
+    },
+    "evenBetterToml.formatter.allowedBlankLines": 1,
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    }
 }
