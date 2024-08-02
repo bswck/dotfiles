@@ -1,7 +1,6 @@
 {
     "workbench.colorTheme": "PyCharm Night Theme",
     "files.autoSave": "onFocusChange",
-    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.selectionClipboard": false,
     "git.enableSmartCommit": true,
@@ -10,14 +9,11 @@
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
     "python.interpreter.infoVisibility": "always",
-	// Activate Python Environment in the current Terminal on load of the Extension.
-	"python.terminal.activateEnvInCurrentTerminal": false,
-
-	// Activate Python Environment in all Terminals created.
-	"python.terminal.activateEnvironment": false,
-    "python.venvPath": "",
-	"python.defaultInterpreterPath": "/usr/bin/python3",
-
+    "python.terminal.activateEnvInCurrentTerminal": false,
+    "python.terminal.activateEnvironment": false,
+    "python.createEnvironment.trigger": "off",
+    "python.venvPath": "/dev/null",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
     "mypy.runUsingActiveInterpreter": true,
     "svelte.enable-ts-plugin": true,
     "[svelte]": {
@@ -34,5 +30,9 @@
     "evenBetterToml.formatter.allowedBlankLines": 1,
     "[toml]": {
         "editor.defaultFormatter": "tamasfe.even-better-toml"
-    }
+    },
+    "emmet.useInlineCompletions": true,
+    "python.venvFolders": [
+        "/dev/null"
+    ]
 }
