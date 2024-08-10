@@ -131,3 +131,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+source /home/astaroth/.bash_completions/autorefine.sh

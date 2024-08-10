@@ -8,6 +8,7 @@
     "git.autofetch": true,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.allowChords": false,
     "python.interpreter.infoVisibility": "always",
     "python.terminal.activateEnvInCurrentTerminal": false,
     "python.terminal.activateEnvironment": false,
@@ -25,7 +26,14 @@
     "ruff.lint.enable": false,
     "python.analysis.autoFormatStrings": true,
     "files.exclude": {
-        "**/.venv/": true
+        "**/.git": false,
+        "**/.git/": true,
+        "**/.hg": false,
+        "**/.hg/": true,
+        "**/.svn": false,
+        "**/.svn/": true,
+        "**/.venv/": true,
+        "**/.vscode/": true
     },
     "evenBetterToml.formatter.allowedBlankLines": 1,
     "[toml]": {
@@ -34,5 +42,6 @@
     "emmet.useInlineCompletions": true,
     "python.venvFolders": [
         "/dev/null"
-    ]
+    ],
+    "explorer.confirmDelete": false
 }
