@@ -15,7 +15,11 @@ function where() {
 function pj() {
     set -x
     deactivate 2> /dev/null || :
-    cd $1
-    code -r .
+    cd $2
+    code $1 .
     set +x
 }
+
+if [ -e ~/.private_aliases ]; then
+    . ~/.private_aliases
+fi
