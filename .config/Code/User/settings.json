@@ -43,5 +43,8 @@
     "python.venvFolders": [
         "/dev/null"
     ],
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "bottom",
+    "workbench.editor.showTabs": "single"
 }
