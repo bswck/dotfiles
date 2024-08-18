@@ -20,5 +20,5 @@ fi
 # set PATH so it includes user's private bin if it exists
 [ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 
-[ -f ${ENV_FILE:="$HOME/.env"} ] && . "$ENV_FILE"
+[ -f ${ENV:="$HOME/.env"} ] && . "$ENV"
 [ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
