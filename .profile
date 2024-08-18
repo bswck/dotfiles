@@ -11,22 +11,14 @@
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
+    [ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+[ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 
-if [ -f "$HOME/.env" ] ; then
-    . "$HOME/.env"
-fi
-. "$HOME/.cargo/env"
+[ -f ${ENV_FILE:="$HOME/.env"} ] && . "$ENV_FILE"
+[ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
