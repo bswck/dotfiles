@@ -116,20 +116,18 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval "$(starship init bash)"
-
-if [ -f "$HOME/.env" ] ; then
-    . "$HOME/.env"
-fi
-
-. "$HOME/.cargo/env"
-
 # pnpm
-export PNPM_HOME="/home/astaroth/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
-source /home/astaroth/.bash_completions/autorefine.sh
+if which starship 1> /dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi
+
+[ -f ${ENV:="$HOME/.env"} ] && . "$HOME/.env"
+[ -d ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
+[ -f ${AUTOREFINE_COMPLETIONS:="$HOME/.bash_completions/autorefine.sh"} ] && . "$AUTOREFINE_COMPLETIONS"
