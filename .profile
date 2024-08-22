@@ -22,3 +22,5 @@ fi
 
 [ -f ${ENV:="$HOME/.env"} ] && . "$ENV"
 [ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
+
+. "$HOME/.cargo/env"

@@ -5,8 +5,8 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-
 	editor = nano
+
 [commit]
 	gpgSign = true
 
@@ -16,4 +16,3 @@
 [push]
 	default = current
 	autoSetupRemote = true
-

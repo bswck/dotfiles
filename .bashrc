@@ -131,3 +131,5 @@ fi
 [ -f ${ENV:="$HOME/.env"} ] && . "$HOME/.env"
 [ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
 [ -f ${AUTOREFINE_COMPLETIONS:="$HOME/.bash_completions/autorefine.sh"} ] && . "$AUTOREFINE_COMPLETIONS"
+
+. "$HOME/.cargo/env"
