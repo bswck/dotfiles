@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
+export PNPM_HOME="/home/bswck/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -133,3 +133,10 @@ fi
 [ -f ${AUTOREFINE_COMPLETIONS:="$HOME/.bash_completions/autorefine.sh"} ] && . "$AUTOREFINE_COMPLETIONS"
 
 . "$HOME/.cargo/env"
+
+# fnm
+FNM_PATH="/home/bswck/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
