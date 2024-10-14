@@ -4,4 +4,4 @@
 	signingkey = ~/.ssh/id_hai.pub
 
 [core]
-	sshCommand = ssh -i ~/.ssh/id_hai -o IdentitiesOnly=yes
+	sshCommand = 'ssh -i ~/.ssh/id_hai -o IdentitiesOnly=yes'
