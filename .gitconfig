@@ -25,7 +25,9 @@
 
 [rerere]
 	enabled = true
+
 [init]
 	defaultBranch = main
+
 [alias]
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
