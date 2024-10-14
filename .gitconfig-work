@@ -1,0 +1,7 @@
+[user]
+	email = bartosz.slawecki@hai.construction
+	name = bswck-hai
+	signingkey = ~/.ssh/id_hai.pub
+
+[core]
+	sshCommand = ssh -i ~/.ssh/id_hai -o IdentitiesOnly=yes

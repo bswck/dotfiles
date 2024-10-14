@@ -7,6 +7,12 @@
 	excludesfile = ~/.gitignore_global
 	editor = nano
 
+[includeIf "gitdir:~/Codezarre/"]
+	path = "~/.gitconfig-codezarre"
+
+[includeIf "gitdir:~/Work/"]
+	path = "~/.gitconfig-work"
+
 [commit]
 	gpgSign = true
 
