@@ -13,6 +13,9 @@
 [includeIf "gitdir:~/Work/"]
 	path = "~/.gitconfig-work"
 
+[includeIf "gitdir:~/Anoptyk/"]
+	path = "~/.gitconfig-anoptyk"
+
 [commit]
 	gpgSign = true
 
