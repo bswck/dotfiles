@@ -26,4 +26,4 @@ coverage.xml
 .vscode/
 **.code-workspace
 t.py
-
+.scratches/
