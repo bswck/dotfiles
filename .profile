@@ -24,3 +24,5 @@ fi
 [ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
 
 . "$HOME/.cargo/env"
+
+. "$HOME/.atuin/bin/env"
