@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+[ -f ${ENV:="$HOME/.env"} ] && . "$ENV"
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -116,29 +118,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# pnpm
-export PNPM_HOME="/home/bswck/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+[ -f ${ATUIN_ENV:="$HOME/.atuin/bin/env" } ] \
+&& . "$HOME/.atuin/bin/env" \
+&& eval "$(atuin init bash --disable-up-arrow)"
 
-if which starship 1> /dev/null 2>&1; then
+if which starship >/dev/null 2>&1; then
     eval "$(starship init bash)"
-fi
-
-[ -f ${ENV:="$HOME/.env"} ] && . "$HOME/.env"
-[ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
-[ -f ${AUTOREFINE_COMPLETIONS:="$HOME/.bash_completions/autorefine.sh"} ] && . "$AUTOREFINE_COMPLETIONS"
-
-. "$HOME/.cargo/env"
-
-# fnm
-FNM_PATH="/home/bswck/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
 fi
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh

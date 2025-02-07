@@ -12,17 +12,12 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     [ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"
+    [ -f ${ENV:="$HOME/.env"} ] && . "$ENV"
+else
+   .
 fi
 
 # set PATH so it includes user's private bin if it exists
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
-
 # set PATH so it includes user's private bin if it exists
 [ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
-
-[ -f ${ENV:="$HOME/.env"} ] && . "$ENV"
-[ -f ${CARGO_ENV:="$HOME/.cargo/env"} ] && . "$CARGO_ENV"
-
-. "$HOME/.cargo/env"
-
-. "$HOME/.atuin/bin/env"
