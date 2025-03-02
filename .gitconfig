@@ -1,5 +1,5 @@
 [user]
-	email = bartoszpiotrslawecki@gmail.com
+	email = bartosz@ilikepython.com
 	name = bswck
 	signingkey = ~/.ssh/id_ed25519.pub
 
@@ -26,6 +26,9 @@
 
 [includeIf "gitdir:~/Anoptyk/"]
 	path = "~/.gitconfig-anoptyk"
+
+[includeIf "gitdir:~/NeverBlink/"]
+	path = "~/.gitconfig-neverblink"
 
 [commit]
 	gpgSign = true
