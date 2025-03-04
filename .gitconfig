@@ -1,5 +1,5 @@
 [user]
-	email = bartosz@ilikepython.com
+	email = bartosz@ilikeprogramming.com
 	name = bswck
 	signingkey = ~/.ssh/id_ed25519.pub
 
@@ -20,6 +20,9 @@
 
 [includeIf "gitdir:~/Printbox/"]
 	path = "~/.gitconfig-printbox"
+
+[includeIf "gitdir:~/Python/"]
+	path = "~/.gitconfig-python"
 
 [includeIf "gitdir:~/HAI/"]
 	path = "~/.gitconfig-hai"
