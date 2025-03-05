@@ -1,5 +1,5 @@
 [user]
-	email = bartosz@ilikeprogramming.com
+	email = bartosz@slawecki.dev
 	name = bswck
 	signingkey = ~/.ssh/id_ed25519.pub
 
