@@ -13,4 +13,12 @@ function where() {
     which -a $1 | uniq
 }
 
+function rm-containers() {
+    docker rm -vf $(docker ps -aq)
+}
+
+function rm-images() {
+    docker rmi -f $(docker images -aq)
+}
+
 [ -e ~/.private_aliases ] && . ~/.private_aliases
