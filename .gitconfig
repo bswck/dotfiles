@@ -24,6 +24,9 @@
 [includeIf "gitdir:~/Python/"]
 	path = "~/.gitconfig-python"
 
+[includeIf "gitdir:~/Rust/"]
+	path = "~/.gitconfig-rust"
+
 [includeIf "gitdir:~/HAI/"]
 	path = "~/.gitconfig-hai"
 
