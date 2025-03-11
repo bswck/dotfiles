@@ -2,6 +2,7 @@ alias c=clear
 alias pn=pnpm
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
+alias e='exa -F'
 
 if which wine 1> /dev/null 2>&1; then
     export C=~/.wine/drive_c
