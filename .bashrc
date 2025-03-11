@@ -128,3 +128,5 @@ if which starship >/dev/null 2>&1; then
 fi
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+[[ -f "bswck.bash" ]] && source "bswck.bash"
