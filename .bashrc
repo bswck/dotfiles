@@ -127,8 +127,4 @@ if which starship >/dev/null 2>&1; then
     starship_precmd
 fi
 
-[ "$SHELL" = "*bash" ] && {
-    echo -e "\e[5 q";
-}
-
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
