@@ -27,6 +27,9 @@
 [includeIf "gitdir:~/Rustmeet/"]
 	path = "~/.gitconfig-rust"
 
+[includeIf "gitdir:~/ScaffOps/"]
+	path = "~/.gitconfig-rust"
+
 [includeIf "gitdir:~/HAI/"]
 	path = "~/.gitconfig-hai"
 
