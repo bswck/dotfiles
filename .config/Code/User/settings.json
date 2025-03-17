@@ -8,8 +8,6 @@
     "git.autofetch": true,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.allowChords": false,
-    "python.interpreter.infoVisibility": "always",
     "python.terminal.activateEnvInCurrentTerminal": false,
     "python.terminal.activateEnvironment": false,
     "python.createEnvironment.trigger": "off",
@@ -48,5 +46,13 @@
     "workbench.editor.showTabs": "single",
     "workbench.secondarySideBar.showLabels": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports.ruff": "explicit"
+    },
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.allowChords": false,
+    "python.interpreter.infoVisibility": "always",
+    "gitlens.rebaseEditor.ordering": "asc",
+    "diffEditor.ignoreTrimWhitespace": false,
 }
