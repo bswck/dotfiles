@@ -23,4 +23,21 @@ function rm-images() {
     docker rmi -f $(docker images -aq)
 }
 
+# https://github.com/astral-sh/ruff/issues/9019
+linked-worktrees() {
+    git worktree list --porcelain | \
+    rg "worktree (.+)" -r '$1' | \
+    # Exclude the main worktree
+    tail -n +2
+}
+
+ruff() {
+    local RUFF; RUFF="$(which ruff)"
+    # shellcheck disable=SC2046,SC2048,SC2086
+    case "$1" in
+        check) "$RUFF" check $(linked-worktrees | xargs -l echo --extend-exclude) ${*:3};;
+        *) "$RUFF" ${*:1};;
+    esac
+}
+
 [ -e ~/.private_aliases ] && . ~/.private_aliases
