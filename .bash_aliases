@@ -41,3 +41,4 @@ ruff() {
 }
 
 [ -e ~/.private_aliases ] && . ~/.private_aliases
+[ "$PWD" != "$HOME" ] && [ -e .private_aliases ] && . .private_aliases

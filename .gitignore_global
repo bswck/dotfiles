@@ -27,4 +27,3 @@ coverage.xml
 **.code-workspace
 t.py
 .scratches/
-bswck.bash
