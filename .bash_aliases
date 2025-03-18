@@ -32,11 +32,10 @@ linked-worktrees() {
 }
 
 ruff() {
-    local RUFF; RUFF="$(which ruff)"
     # shellcheck disable=SC2046,SC2048,SC2086
     case "$1" in
-        check) "$RUFF" check $(linked-worktrees | xargs -l echo --extend-exclude) ${*:3};;
-        *) "$RUFF" ${*:1};;
+        check) command ruff check $(linked-worktrees | xargs -l echo --extend-exclude) ${*:3};;
+        *) command ruff ${*:1};;
     esac
 }
 
