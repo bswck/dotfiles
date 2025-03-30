@@ -2,8 +2,8 @@
 disabled = true
 
 [python]
-symbol = "🚀"
-format = "[($symbol $virtualenv )]($style)"
+symbol = "\ue235 "
+format = "[($symbol$virtualenv )]($style)"
 
 [nodejs]
 disabled = true
