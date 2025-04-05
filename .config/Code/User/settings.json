@@ -55,4 +55,7 @@
     "python.interpreter.infoVisibility": "always",
     "gitlens.rebaseEditor.ordering": "asc",
     "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.startupEditor": "none",
+    "window.titleBarStyle": "native",
+    "chat.commandCenter.enabled": false,
 }
