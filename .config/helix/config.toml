@@ -1,16 +1,25 @@
 theme = "curzon"
 
-[keys.insert]
-pageup = "half_page_up"
-pagedown = "half_page_down"
-
 [keys.normal]
-pageup = "half_page_up"
-pagedown = "half_page_down"
+pageup = "page_cursor_half_up"
+pagedown = "page_cursor_half_down"
+"A-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+"A-up" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+    
 
 [editor]
 line-number = "relative"
 mouse = false
+color-modes = true
+true-color = true
+bufferline = "multiple"
+idle-timeout = 10
+cursorline = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -19,3 +28,24 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
+
+[editor.statusline]
+left = [
+    "mode",
+    "spinner",
+    "file-name",
+    "file-modification-indicator",
+    "spacer",
+    "diagnostics",
+]
+right = ["version-control", "selections", "position", "file-encoding"]
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+display-messages = true
