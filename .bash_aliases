@@ -3,6 +3,7 @@ alias pn=pnpm
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
 alias e='exa -F'
+alias autin='atuin'
 
 f() {
     touch "$1"
