@@ -5,7 +5,7 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = nano
+	editor = hx
 	pager = delta
 
 [rebase]
@@ -15,11 +15,10 @@
 	autocorrect = 20
 
 [interactive]
-	diffFilter = delta --color-only
+	difffilter = delta --color-only
 
 [delta]
-	navigate = true  # use n and N to move between diff sections
-	dark = true      # or light = true, or omit for auto-detection
+	navigate = true
 
 [includeIf "gitdir:~/Codezarre/"]
 	path = "~/.gitconfig-codezarre"
@@ -53,13 +52,13 @@
 
 [push]
 	default = current
-	autoSetupRemote = true
+	autosetupremote = true
 
 [rerere]
 	enabled = true
 
 [init]
-	defaultBranch = main
+	defaultbranch = main
 
 [alias]
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
