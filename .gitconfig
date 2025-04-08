@@ -8,6 +8,9 @@
 	editor = nano
 	pager = delta
 
+[rebase]
+	autostash = true
+
 [help]
 	autocorrect = 20
 
