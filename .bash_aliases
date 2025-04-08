@@ -6,7 +6,6 @@ alias e='exa -F'
 alias autin='atuin'
 
 f() {
-    touch "$1"
     code -r "$1"
 }
 
