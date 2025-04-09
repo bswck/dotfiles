@@ -1,5 +1,6 @@
 .private
 .private_aliases
+.aliases
 
 *~
 .DS_Store

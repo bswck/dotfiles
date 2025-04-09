@@ -28,5 +28,5 @@ function rm-images() {
     docker rmi -f $(docker images -aq)
 }
 
-[ -f ~/.private_aliases ] && . ~/.private_aliases
-[ "$PWD" != "$HOME" ] && [ -f .private_aliases ] && . .private_aliases
+[[ -f ~/.private_aliases ]] && . ~/.private_aliases
+[[ -f .aliases ]] && source .aliases
