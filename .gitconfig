@@ -66,3 +66,5 @@
 
 [maintenance]
 	repo = ~/Python/cpython
+[submodule]
+	recurse = true
