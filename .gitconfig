@@ -36,6 +36,9 @@
 [includeIf "gitdir:~/ScaffOps/"]
 	path = "~/.gitconfig-rust"
 
+[includeIf "gitdir:~/Wecamo/"]
+	path = "~/.gitconfig-wecamo" 
+
 [includeIf "gitdir:~/HAI/"]
 	path = "~/.gitconfig-hai"
 
@@ -66,5 +69,6 @@
 
 [maintenance]
 	repo = ~/Python/cpython
+
 [submodule]
 	recurse = true
