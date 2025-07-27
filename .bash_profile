@@ -1,1 +1,1 @@
-/home/bswck/.profile
+$HOME/.profile
