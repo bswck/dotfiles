@@ -5,8 +5,12 @@ alias poetry='uvx poetry'
 alias e='exa -F'
 alias autin='atuin'
 
-f() {
+function f() {
     code -r "$1"
+}
+
+function sync-fork() {
+    git pull upstream main && git push origin main
 }
 
 if which wine 1> /dev/null 2>&1; then
