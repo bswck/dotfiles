@@ -1,6 +1,7 @@
 .private
 .private_aliases
 .aliases
+.repl.py
 
 *~
 .DS_Store
