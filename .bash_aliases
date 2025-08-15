@@ -34,3 +34,7 @@ function rm-images() {
 
 [[ -f ~/.private_aliases ]] && . ~/.private_aliases
 [[ -f .aliases ]] && source .aliases
+
+if [[ -d "$PWD/scripts" ]]; then
+    export PATH="$PATH:$PWD/scripts/"
+fi
