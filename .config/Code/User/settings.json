@@ -1,61 +1,74 @@
 {
-    "workbench.colorTheme": "PyCharm Night Theme",
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true,
-    "editor.selectionClipboard": false,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "explorer.confirmDragAndDrop": false,
-    "python.terminal.activateEnvInCurrentTerminal": false,
-    "python.terminal.activateEnvironment": false,
-    "python.createEnvironment.trigger": "off",
-    "python.venvPath": "/dev/null",
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "mypy.runUsingActiveInterpreter": true,
-    "svelte.enable-ts-plugin": true,
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "explorer.confirmPasteNative": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "mypy.enabled": false,
-    "ruff.lint.enable": false,
-    "python.analysis.autoFormatStrings": true,
-    "files.exclude": {
-        "**/.git": false,
-        "**/.git/": true,
-        "**/.hg": false,
-        "**/.hg/": true,
-        "**/.svn": false,
-        "**/.svn/": true,
-        "**/.venv/": true,
-        "**/.vscode/": true
-    },
-    "evenBetterToml.formatter.allowedBlankLines": 1,
-    "[toml]": {
-        "editor.defaultFormatter": "tamasfe.even-better-toml"
-    },
-    "emmet.useInlineCompletions": true,
-    "python.venvFolders": [
-        "/dev/null"
-    ],
-    "explorer.confirmDelete": false,
-    "workbench.activityBar.location": "bottom",
-    "workbench.editor.showTabs": "single",
-    "workbench.secondarySideBar.showLabels": false,
-    "rust-analyzer.inlayHints.typeHints.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports.ruff": "explicit"
-    },
-    "terminal.integrated.sendKeybindingsToShell": true,
-    "terminal.integrated.allowChords": false,
-    "python.interpreter.infoVisibility": "always",
-    "gitlens.rebaseEditor.ordering": "asc",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.startupEditor": "none",
-    "window.titleBarStyle": "native",
-    "chat.commandCenter.enabled": false,
+  "workbench.colorTheme": "PyCharm Night Theme",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.selectionClipboard": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "python.terminal.activateEnvironment": false,
+  "python.createEnvironment.trigger": "off",
+  "python.venvPath": "/dev/null",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "mypy.runUsingActiveInterpreter": true,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "explorer.confirmPasteNative": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "mypy.enabled": false,
+  "ruff.lint.enable": false,
+  "python.analysis.autoFormatStrings": true,
+  "files.exclude": {
+    "**/__pycache__/": true,
+    "**/.git": false,
+    "**/.git/": true,
+    "**/.hg": false,
+    "**/.hg/": true,
+    "**/.svn": false,
+    "**/.svn/": true,
+    "**/.venv/": true,
+    "**/.vscode/": true
+  },
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "emmet.useInlineCompletions": true,
+  "python.venvFolders": ["/dev/null"],
+  "explorer.confirmDelete": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.secondarySideBar.showLabels": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.ruff": "explicit"
+  },
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.allowChords": false,
+  "python.interpreter.infoVisibility": "always",
+  "gitlens.rebaseEditor.ordering": "asc",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.startupEditor": "none",
+  "window.titleBarStyle": "native",
+  "chat.commandCenter.enabled": false,
+  "kilo-code.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ],
+  "kilo-code.deniedCommands": [],
+  "C_Cpp.files.exclude": {
+    "**/.vscode": true,
+    "**/.vs": true,
+    "iOS/Resources/": true
+  },
+  "editor.formatOnSaveMode": "modifications"
 }

@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "alt+b",
+        "key": "alt+left",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
     },
@@ -11,7 +11,7 @@
         "when": "canNavigateBack"
     },
     {
-        "key": "alt+n",
+        "key": "alt+right",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
     },
@@ -29,5 +29,15 @@
         "key": "alt+b",
         "command": "-gitlens.toggleFileBlame",
         "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+    },
+    {
+        "key": "alt+left",
+        "command": "-gitlens.key.alt+left",
+        "when": "gitlens:key:alt+left"
+    },
+    {
+        "key": "alt+right",
+        "command": "-gitlens.key.alt+right",
+        "when": "gitlens:key:alt+right"
     }
 ]
