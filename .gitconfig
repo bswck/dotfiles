@@ -22,31 +22,31 @@
 	navigate = true
 
 [includeIf "gitdir:~/Codezarre/"]
-	path = "~/.gitconfig-codezarre"
+	path = "~/.gitconfig_codezarre"
 
 [includeIf "gitdir:~/Printbox/"]
-	path = "~/.gitconfig-printbox"
+	path = "~/.gitconfig_printbox"
 
 [includeIf "gitdir:~/Python/"]
-	path = "~/.gitconfig-python"
+	path = "~/.gitconfig_python"
 
 [includeIf "gitdir:~/Rustmeet/"]
-	path = "~/.gitconfig-rust"
+	path = "~/.gitconfig_rust"
 
 [includeIf "gitdir:~/ScaffOps/"]
-	path = "~/.gitconfig-rust"
+	path = "~/.gitconfig_rust"
 
 [includeIf "gitdir:~/Wecamo/"]
-	path = "~/.gitconfig-wecamo" 
+	path = "~/.gitconfig_wecamo" 
 
 [includeIf "gitdir:~/HAI/"]
-	path = "~/.gitconfig-hai"
+	path = "~/.gitconfig_hai"
 
 [includeIf "gitdir:~/Anoptyk/"]
-	path = "~/.gitconfig-anoptyk"
+	path = "~/.gitconfig_anoptyk"
 
 [includeIf "gitdir:~/NeverBlink/"]
-	path = "~/.gitconfig-neverblink"
+	path = "~/.gitconfig_neverblink"
 
 [commit]
 	gpgSign = true
