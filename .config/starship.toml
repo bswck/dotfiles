@@ -2,7 +2,7 @@
 disabled = true
 
 [python]
-symbol = "\ue235 "
+symbol = "~ "
 format = "[($symbol$virtualenv )]($style)"
 
 [nodejs]
