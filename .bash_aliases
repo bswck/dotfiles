@@ -39,11 +39,11 @@ if [[ -d "$PWD/scripts" ]]; then
     export PATH="$PATH:$PWD/scripts/"
 fi
 
-function build-py() {
+function pymake() {
     # use only in cpython repo!
     if [[ "$OSTYPE" == "cygwin" ]]; then
-        PCbuild/build.bat -c Debug "$@"
+        PCbuild/build.bat "$@"
     elif [[ "$OSTYPE" == "cygwin" ]]; then
-        ./make -j "$@"
+        ./make "$@"
     fi
 }
