@@ -38,3 +38,12 @@ function rm-images() {
 if [[ -d "$PWD/scripts" ]]; then
     export PATH="$PATH:$PWD/scripts/"
 fi
+
+function build-py() {
+    # use only in cpython repo!
+    if [[ "$OSTYPE" == "cygwin" ]]; then
+        PCbuild/build.bat -c Debug "$@"
+    elif [[ "$OSTYPE" == "cygwin" ]]; then
+        ./make -j "$@"
+    fi
+}

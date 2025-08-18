@@ -18,6 +18,7 @@ if _importlib_util.find_spec("pythonrc_manager"):
     from pythonrc_manager import (
         project_rc_path as _project_rc_path,
     )
+    from pythonrc_manager import restart
 
     _displayhook = _DisplayHookPatcher.pprinting()
     _displayhook.start()
