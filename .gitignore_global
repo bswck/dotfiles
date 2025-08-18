@@ -30,3 +30,5 @@ coverage.xml
 **.code-workspace
 t.py
 .scratches/
+
+monkeytype.sqlite3
