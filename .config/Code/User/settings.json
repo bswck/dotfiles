@@ -70,5 +70,6 @@
     "**/.vs": true,
     "iOS/Resources/": true
   },
-  "editor.formatOnSaveMode": "modifications"
+  "editor.formatOnSaveMode": "modifications",
+  "dart.flutterSdkPath": "/home/bswck/.flutter-sdk/flutter"
 }
