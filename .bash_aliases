@@ -1,9 +1,12 @@
 alias c=clear
 alias pn=pnpm
+alias cp='cp -vi'
+alias mv='mv -vi'
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
 alias e='exa -F'
 alias autin='atuin'
+alias pre-commit='prek'
 
 function f() {
     code -r "$1"
