@@ -71,5 +71,10 @@
     "iOS/Resources/": true
   },
   "editor.formatOnSaveMode": "modifications",
-  "dart.flutterSdkPath": "/home/bswck/.flutter-sdk/flutter"
+  "dart.flutterSdkPath": "/home/bswck/.flutter-sdk/flutter",
+  "python.analysis.typeEvaluation.strictListInference": true,
+  "python.analysis.typeEvaluation.strictDictionaryInference": true,
+  "python.analysis.typeEvaluation.strictSetInference": true,
+  "python.analysis.regenerateStdLibIndices": true,
+  "docker.extension.enableComposeLanguageServer": false
 }
