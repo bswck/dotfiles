@@ -2,6 +2,7 @@ alias c=clear
 alias pn=pnpm
 alias cp='cp -vi'
 alias mv='mv -vi'
+alias fd-first='fd --max-results 1'
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
 alias e='exa -F'
