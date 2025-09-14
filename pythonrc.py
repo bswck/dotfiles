@@ -3,6 +3,8 @@ import sys
 from collections.abc import Callable
 from typing import Any
 
+sys.path.append(os.path.dirname(__file__))
+
 from pythonrc_manager import DisplayHookPatcher as _DisplayHookPatcher
 from pythonrc_manager import init_rc_script as _init_rc_script
 from pythonrc_manager import project_rc_path as _project_rc_path
