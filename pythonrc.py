@@ -7,6 +7,9 @@ _displayhook = sys.displayhook
 def pdir(o) -> list[str]:
     return [o for o in dir(o) if not o.startswith("_")]
 
+def pvars(o) -> dict[str, object]:
+    return {k: v for k, v in vars(o).items() if not k.startswith("_")}
+
 if _importlib_util.find_spec("pythonrc_manager"):
     from pythonrc_manager import (
         DisplayHookPatcher as _DisplayHookPatcher,
