@@ -28,6 +28,7 @@ def report(
 ) -> None:
     if not int(os.environ.get("PYTHONRC_VERBOSE", "0")) and not important:
         return
+    kwargs.setdefault("file", sys.stderr)
     caller = sys._getframe(stack_offset)
     if add_location:
         location = f"{os.path.relpath(caller.f_code.co_filename)}:{caller.f_lineno}"
