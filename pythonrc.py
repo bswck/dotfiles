@@ -20,30 +20,33 @@ def report(
     *args: object,
     stack_offset: int = 1,
     print_fn: Callable[..., None] = print,
+    add_location: bool = True,
     important: bool = False,
     **kwargs: Any,
 ) -> None:
-    if sys.orig_argv[1:2] == ["-q"] and not important:
+    if not int(os.environ.get("PYTHONRC_VERBOSE", "0")) and not important:
         return
     caller = sys._getframe(stack_offset)
-    location = f"{os.path.relpath(caller.f_code.co_filename)}:{caller.f_lineno}:"
-    print_fn(location, *args, **kwargs)
+    if add_location:
+        location = f"{os.path.relpath(caller.f_code.co_filename)}:{caller.f_lineno}"
+        args = (f"[{location}]",) + args
+    print_fn(*args, **kwargs)
 
 
 try:
     from rich.pretty import pprint as rich_pprint
 
     do_pprint = rich_pprint
-    report(f"Using rich for display hook")
+    report("Using rich for display hook")
 except ImportError:
     from pprint import pprint as pprint_pprint
 
     do_pprint = pprint_pprint
-    report(f"Using pprint as display hook")
+    report("Using pprint as display hook")
 
 _dp = _DisplayHookPatcher(do_pprint)  # 🦈
 _dp.start()
-report("Custom display hook enabled")
+report(f"Initialized (using {_dp.printer.__qualname__} displayhook)", important=True)
 
 d = sys.displayhook
 
