@@ -1,2 +1,3 @@
 alias gmail='start https://mail.google.com/mail/u/0/#inbox'
 alias linkedin='start https://www.linkedin.com/feed/'
+alias github='start https://github.com/'
