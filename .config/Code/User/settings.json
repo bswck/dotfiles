@@ -1,7 +1,6 @@
 {
   "workbench.colorTheme": "PyCharm Night Theme",
   "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
   "editor.selectionClipboard": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -12,7 +11,7 @@
   "python.terminal.activateEnvironment": false,
   "python.createEnvironment.trigger": "off",
   "python.venvPath": "/dev/null",
-  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.defaultInterpreterPath": "/usr",
   "mypy.runUsingActiveInterpreter": true,
   "svelte.enable-ts-plugin": true,
   "[svelte]": {
@@ -70,11 +69,33 @@
     "**/.vs": true,
     "iOS/Resources/": true
   },
-  "editor.formatOnSaveMode": "modifications",
   "dart.flutterSdkPath": "/home/bswck/.flutter-sdk/flutter",
   "python.analysis.typeEvaluation.strictListInference": true,
   "python.analysis.typeEvaluation.strictDictionaryInference": true,
   "python.analysis.typeEvaluation.strictSetInference": true,
   "python.analysis.regenerateStdLibIndices": true,
-  "docker.extension.enableComposeLanguageServer": false
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "rust": false
+  },
+  "amp.url": "https://ampcode.com/",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.formatOnSaveMode": "modifications"
 }

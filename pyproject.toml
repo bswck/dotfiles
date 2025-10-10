@@ -5,7 +5,9 @@ description = "Personal dotfiles of bswck"
 authors = [{ name = "Bartosz Sławecki", email = "bartosz@ilikepython.com" }]
 requires-python = ">=3.9"
 version = "0.1.0"
-dependencies = []
+dependencies = [
+    "snoop>=0.6.0",
+]
 
 [dependency-groups]
 dev = ["mypy>=1.13.0", "pre-commit>=4.2.0", "ruff>=0.11.8"]
@@ -34,6 +36,12 @@ docs = [
 [tool.uv]
 required-version = "~=0.8.3"
 default-groups = ["dev", "test", "types", "docs"]
+
+[tool.uv.workspace]
+members = [
+    "Rust/pleno/foobar",
+    "Law/ajdu",
+]
 
 [tool.mypy]
 strict = true
