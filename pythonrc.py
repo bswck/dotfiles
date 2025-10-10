@@ -1,8 +1,11 @@
 import os
 import sys
+import inspect
 from collections.abc import Callable
+from functools import partial
 from typing import Any
 
+__file__ = "/home/bswck/pythonrc.py"
 sys.path.append(os.path.dirname(__file__))
 
 from pythonrc_manager import DisplayHookPatcher as _DisplayHookPatcher
@@ -15,7 +18,7 @@ def pdir(o: object) -> list[str]:
 
 
 def pvars(o: object) -> dict[str, object]:
-    return {k: v for k, v in vars(o).items() if not k.startswith("_")}
+    return {k: v for k, v in inspect.getmembers_static(o) if not k.startswith("_")}
 
 
 def report(
@@ -44,12 +47,12 @@ try:
 except ImportError:
     from pprint import pprint as pprint_pprint
 
-    do_pprint = pprint_pprint
+    do_pprint = partial(pprint_pprint, sort_dicts=False)
     report("Using pprint as display hook")
 
 _dp = _DisplayHookPatcher(do_pprint)  # 🦈
 _dp.start()
-report(f"Initialized (using {_dp.printer.__qualname__} displayhook)", important=True)
+report(f"Initialized (using {_dp.printer} displayhook)", important=True)
 
 d = sys.displayhook
 

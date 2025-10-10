@@ -1,12 +1,14 @@
 alias c=clear
-alias pn=pnpm
 alias cp='cp -vi'
 alias mv='mv -vi'
 alias rm='rm -vi'
 alias fd-first='fd --max-results 1'
+
+alias pn='pnpm'
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
 alias e='exa -F'
+alias r='cargo run --quiet --'
 alias autin='atuin'
 alias pre-commit='prek'
 
