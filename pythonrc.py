@@ -5,9 +5,6 @@ from collections.abc import Callable
 from functools import partial
 from typing import Any
 
-__file__ = "/home/bswck/pythonrc.py"
-sys.path.append(os.path.dirname(__file__))
-
 from pythonrc_manager import DisplayHookPatcher as _DisplayHookPatcher
 from pythonrc_manager import init_rc_script as _init_rc_script
 from pythonrc_manager import project_rc_path as _project_rc_path
@@ -21,6 +18,10 @@ def pvars(o: object) -> dict[str, object]:
     return {k: v for k, v in inspect.getmembers_static(o) if not k.startswith("_")}
 
 
+def quiet_flag() -> bool:
+    return "-q" in sys.orig_argv and "-q" not in sys.argv  # good enough heuristic
+
+
 def report(
     *args: object,
     stack_offset: int = 1,
@@ -29,7 +30,7 @@ def report(
     important: bool = False,
     **kwargs: Any,
 ) -> None:
-    if not int(os.environ.get("PYTHONRC_VERBOSE", "0")) and not important:
+    if not int(os.environ.get("PYTHONRC_VERBOSE", "0")) and not important or quiet_flag():
         return
     kwargs.setdefault("file", sys.stderr)
     caller = sys._getframe(stack_offset)
