@@ -5,6 +5,9 @@ disabled = true
 symbol = "~ "
 format = "[($symbol$virtualenv )]($style)"
 
+[c]
+disabled = true
+
 [nodejs]
 disabled = true
 
