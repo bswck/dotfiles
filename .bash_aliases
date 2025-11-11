@@ -5,6 +5,7 @@ alias rm='rm -vi'
 alias fd-first='fd --max-results 1'
 
 alias pn='pnpm'
+alias px='pnpx'
 alias sv='pnpx sv'
 alias poetry='uvx poetry'
 alias e='exa -F'
