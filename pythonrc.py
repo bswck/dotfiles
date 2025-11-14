@@ -1,9 +1,13 @@
+import importlib
+import inspect
 import os
 import sys
-import inspect
 from collections.abc import Callable
 from functools import partial
 from typing import Any
+
+if importlib.util.find_spec("pythonrc_manager") is None:
+    sys.path.append(os.path.expanduser("~"))
 
 from pythonrc_manager import DisplayHookPatcher as _DisplayHookPatcher
 from pythonrc_manager import init_rc_script as _init_rc_script
@@ -30,7 +34,11 @@ def report(
     important: bool = False,
     **kwargs: Any,
 ) -> None:
-    if not int(os.environ.get("PYTHONRC_VERBOSE", "0")) and not important or quiet_flag():
+    if (
+        not int(os.environ.get("PYTHONRC_VERBOSE", "0"))
+        and not important
+        or quiet_flag()
+    ):
         return
     kwargs.setdefault("file", sys.stderr)
     caller = sys._getframe(stack_offset)
