@@ -52,21 +52,16 @@ try:
     from rich.pretty import pprint as rich_pprint
 
     do_pprint = rich_pprint
-    report("Using rich for display hook")
 except ImportError:
     from pprint import pprint as pprint_pprint
 
     do_pprint = partial(pprint_pprint, sort_dicts=False)
-    report("Using pprint as display hook")
 
 _dp = _DisplayHookPatcher(do_pprint)  # 🦈
 _dp.start()
-report(f"Initialized (using {_dp.printer} displayhook)", important=True)
-
 d = sys.displayhook
 
 if __name__ == "__main__":
     _rc = _project_rc_path()
     if _rc and os.path.exists(_rc):
         _init_rc_script(_rc, globals())
-        report(f"Loaded project rc script: {_rc}", important=True)
