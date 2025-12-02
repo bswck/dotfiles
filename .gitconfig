@@ -1,6 +1,6 @@
 [user]
 	email = bartosz@slawecki.dev
-	name = bswck
+	name = johnslavik
 	signingkey = ~/.ssh/id_ed25519.pub
 
 [core]
