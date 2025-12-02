@@ -69,6 +69,7 @@
 
 [maintenance]
 	repo = ~/Python/cpython
+	repo = ~/Apache/airflow
 
 [submodule]
 	recurse = true
