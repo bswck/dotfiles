@@ -67,7 +67,7 @@
   "python.analysis.regenerateStdLibIndices": true,
   "docker.extension.enableComposeLanguageServer": false,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
@@ -101,4 +101,14 @@
   },
   "editor.formatOnSave": true,
   "githubPullRequests.pullBranch": "never",
+  "svelte.plugin.svelte.runesLegacyModeCodeLens.enable": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.unicodeHighlight.allowedLocales": {
+    "cs": true
+  },
 }
